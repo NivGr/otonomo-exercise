@@ -5,7 +5,7 @@ import LevelBar from './LevelBar'
 export default function EventNotification({
   carEvent: { vin, timestamp, fuel, wiperFluid, location },
   color = '#00c3e8',
-}) {
+  }) {
   return (
     <article className="car-event">
       <section className="car-event__vin" style={{ backgroundColor: color }}>
