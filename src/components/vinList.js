@@ -54,7 +54,7 @@ export default class VinList extends Component {
               <div className="card-header">
                 <span><Input value={this.state.newVin.id} onChange= {({target}) => this.handleChange("input", target.value)}/></span>
                 <span><Button type="button" onClick= {() => {this.addVin()}}/></span>
-                <div className= "validationAlert">{this.state.validateVin === true ? "Your VIN is invalid! make sure it's 17 letters long and Alphanumeric and all caps!" : ''}</div>
+                <div className= "validationAlert">{this.state.validateVin === true ? "Your VIN is invalid! make sure it's 17 letters long and all caps Alphanumeric!" : ''}</div>
               </div>
               <div className="card-body">
                 <p className="vinListHeader mt-2">Tracked VINs</p>
